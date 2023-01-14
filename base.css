@@ -44,16 +44,21 @@ body{
     overflow: auto;
 }
 
-/*empty */
+/*info texts */
 .empty-list-info{
     max-width: 100%;
     padding: 15px;
     font-size: 1.5em;
     margin: 20px auto;
-    border: 1px solid #ccc;
-    background-color: #424243;
+    border: 1px solid #5d5d5d;
+    background-color: #5d5d5d;
+    border-radius: 8px;
 }
 
 .font-size-1-2{
     font-size: 1.2em !important;
+}
+
+.color-b{
+    color: #000000 !important;
 }

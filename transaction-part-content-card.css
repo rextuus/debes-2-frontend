@@ -307,38 +307,3 @@
     font-weight: bold;
 }
 
-.next-state-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.next-state-button button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    font-size: 1.1em; /* Increase font size */
-    border: 2px solid black;
-    color: black;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-.accept{
-    background-color: #6c915b; /* Green background */
-
-}
-.decline{
-    background-color: #c04545; /* Green background */
-}
-
-.next-state-button img {
-    padding: 5px;
-    width: 30px;
-    margin-right: 10px; /* Add some margin between the image and text */
-}
-
-.next-state-button-text{
-    margin-right: 10px;
-}
-

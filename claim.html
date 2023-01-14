@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="tab.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-    <title>Debes - Claim</title>
+    <title>Debes - Login</title>
 </head>
 <body>
 
 
-<div class="top-navi top-navi-with-tabs">
+<div class="top-navi">
     <div></div>
     <button id="burger" class="open-main-nav">
         <span class="burger"></span>
@@ -38,43 +38,62 @@
         </ul>
     </nav>
 </div>
-<div id="tab-nav">
-    <button class="tab-button active" data-tab="tab-1">Standard</button>
-    <button class="tab-button disabled" data-tab="tab-2">Multiple</button>
+
+
+<div class="page-header">
+    <div class="page-header-text">
+        Geld einfordern
+    </div>
+    <div class="page-header-image">
+        <img src="public/assets/img/claim.svg" alt="Tile image">
+    </div>
+
 </div>
 <div class="content-body">
 
+    <div class="form-area">
+        <form>
+            <div class="form-input-field">
+                <label style="display: block;" for="claim-target">Schuldner</label>
+                <div class="image-form-row">
+                    <div class="image-form-row-image">
+                        <img src="public/assets/img/target-person.svg" alt="Tile image">
+                    </div>
+                    <select class="form-style" id="claim-target">
+                        <option>Ronny</option>
+                        <option>Ronja</option>
+                        <option>Chris-Robin</option>
+                        <option>Silvia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-input-field">
+                <label class="hidden" for="claim-amount">Betrag</label>
+                <div class="image-form-row">
+                    <div class="image-form-row-image">
+                        <img src="public/assets/img/coins.svg" alt="Tile image">
+                    </div>
+                    <input class="form-style" id="claim-amount" type="text" name="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="1.000,00 &euro;">
+                </div>
+            </div>
 
-    <!-- HTML for the tab content -->
-    <div id="tab-content">
-        <div id="tab-1" class="tab active">
-            <div class="form-header">Zeit schulden einzutreiben</div>
-            <form>
-                <div class="form-input-field"><input class="form-style" type="text" id="login-username"
-                                                     placeholder="Username"></div>
-                <div class="form-input-field"><input class="form-style" type="password" id="login-password"
-                                                     placeholder="Passwort"></div>
-                <div class="form-submit-field"><input class="btn" type="submit" value="Login"></div>
-            </form>
-
-        </div>
-        <div id="tab-2" class="tab">
-            <form>
-                <div class="form-input-field"><input class="form-style" type="text" id="registration-username"
-                                                     placeholder="Username"></div>
-                <div class="form-input-field"><input class="form-style" type="password" id="registration-password"
-                                                     placeholder="Passwort"></div>
-                <div class="form-input-field"><input class="form-style" type="email" id="registration-email"
-                                                     placeholder="Email"></div>
-                <div class="form-submit-field"><input class="btn" type="submit" value="Registrieren"></div>
-            </form>
-        </div>
+            <div class="form-input-field">
+                <label class="hidden" for="claim-reason"></label>
+                <div class="image-form-row">
+                    <div class="image-form-row-image">
+                        <img src="public/assets/img/reason.svg" alt="Tile image">
+                    </div>
+                    <input class="form-style" type="text" id="claim-reason" placeholder="Grund">
+                </div>
+            </div>
+            <div class="form-submit-field"><input class="btn" type="submit" value="Eintreiben"></div>
+        </form>
     </div>
+
 
 </div>
 
 <script src="navi.js"></script>
-<script src="account-landing.js"></script>
-<script src="tab.js"></script>
+<script src="form.js"></script>
 </body>
 </html>

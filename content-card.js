@@ -31,11 +31,13 @@ contentCards.forEach(contentCard => {
         });
     }
 
-    transactionDetails.addEventListener('click', () => {
-        body.classList.toggle('hidden');
-        collapseIcon.classList.toggle('rotate');
-        label.classList.toggle('transparent-text');
-    });
+    if (transactionDetails){
+        transactionDetails.addEventListener('click', () => {
+            body.classList.toggle('hidden');
+            collapseIcon.classList.toggle('rotate');
+            label.classList.toggle('transparent-text');
+        });
+    }
 });
 
 

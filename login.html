@@ -12,7 +12,7 @@
 <body>
 
 
-<div class="top-navi top-navi-with-tabs">
+<div class="top-navi">
     <div></div>
     <button id="burger" class="open-main-nav">
         <span class="burger"></span>
@@ -38,48 +38,96 @@
         </ul>
     </nav>
 </div>
-<div id="tab-nav">
-    <button class="tab-button active" data-tab="tab-1">Login</button>
-    <button class="tab-button" data-tab="tab-2">Registrieren</button>
+<div class="tab-nav">
+    <button class="tab-button active" data-tab="tab-1" data-name="Login"
+            data-image="public/assets/img/login.svg"></button>
+    <button class="tab-button" data-tab="tab-2" data-name="Registieren"
+            data-image="public/assets/img/registration.svg"></button>
+</div>
+
+<div class="page-header">
+    <div class="page-header-text">
+        Konten
+    </div>
+    <div class="page-header-image">
+        <img src="public/assets/img/login.svg" alt="Tile image">
+    </div>
+
 </div>
 <div class="content-body">
 
 
-    <!-- HTML for the tab content -->
-    <div id="tab-content">
-        <div id="tab-1" class="tab active">
-            <div class="form-area">
-                <div class="form-header">Schön dass du mal wieder rein schaust</div>
-                <form>
-                    <div class="form-input-field">
+    <div id="tab-1" class="tab active">
+        <div class="empty-list-info font-size-1-2">Willkommen zurück</div>
+
+        <div class="form-area">
+            <form>
+                <div class="form-input-field">
+                    <label class="hidden" for="login-username"></label>
+                    <div class="image-form-row">
+                        <div class="image-form-row-image">
+                            <img src="public/assets/img/person.svg" alt="Tile image">
+                        </div>
                         <input class="form-style" type="text" id="login-username" placeholder="Username">
                     </div>
-                    <div class="form-input-field">
-                        <input class="form-style" type="password" id="login-password" placeholder="Passwort">
+                </div>
+                <div class="form-input-field">
+                    <label class="hidden" for="login-passwort"></label>
+                    <div class="image-form-row">
+                        <div class="image-form-row-image">
+                            <img src="public/assets/img/password.svg" alt="Tile image">
+                        </div>
+                        <input class="form-style" type="password" id="login-passwort" placeholder="Passwort">
                     </div>
-                    <div class="form-submit-field"><input class="btn" type="submit" value="Login"></div>
-                </form>
-            </div>
+                </div>
+                <div class="form-submit-field"><input class="btn" type="submit" value="Login"></div>
+            </form>
         </div>
-        <div id="tab-2" class="tab">
-            <div class="form-area">
-                <div class="form-header">Eine gute Entscheidung dabei zu sein</div>
-                <form>
-                    <div class="form-input-field">
-                        <input class="form-style" type="text" id="user_username" placeholder="Username">
+    </div>
+    <div id="tab-2" class="tab">
+        <div class="empty-list-info font-size-1-2">Eine gute Entscheidung dabei zu sein</div>
+
+        <div class="form-area">
+            <form>
+                <div class="form-input-field">
+                    <label class="hidden" for="registration-username"></label>
+                    <div class="image-form-row">
+                        <div class="image-form-row-image">
+                            <img src="public/assets/img/person.svg" alt="Tile image">
+                        </div>
+                        <input class="form-style" type="text" id="registration-username" placeholder="Username">
                     </div>
-                    <div class="form-input-field">
-                        <input class="form-style" type="password" id="user_password_first" name="user[password][password]" required="required" placeholder="Passwort">
+                </div>
+                <div class="form-input-field">
+                    <label class="hidden" for="registration-password-1"></label>
+                    <div class="image-form-row">
+                        <div class="image-form-row-image">
+                            <img src="public/assets/img/password.svg" alt="Tile image">
+                        </div>
+                        <input class="form-style" type="password" id="registration-password-1" placeholder="Passwort">
                     </div>
-                    <div class="form-input-field">
-                        <input class="form-style" type="password2" id="registration-password" placeholder="Passwort wiederholen">
+                </div>
+                <div class="form-input-field">
+                    <label class="hidden" for="registration-password-2"></label>
+                    <div class="image-form-row">
+                        <div class="image-form-row-image">
+                            <img src="public/assets/img/password.svg" alt="Tile image">
+                        </div>
+                        <input class="form-style" type="password" id="registration-password-2"
+                               placeholder="Passwort wiederholen">
                     </div>
-                    <div class="form-input-field">
+                </div>
+                <div class="form-input-field">
+                    <label class="hidden" for="registration-email"></label>
+                    <div class="image-form-row">
+                        <div class="image-form-row-image">
+                            <img src="public/assets/img/email.svg" alt="Tile image">
+                        </div>
                         <input class="form-style" type="email" id="registration-email" placeholder="Email">
                     </div>
-                    <div class="form-submit-field"><input class="btn" type="submit" value="Registrieren"></div>
-                </form>
-            </div>
+                </div>
+                <div class="form-submit-field"><input class="btn" type="submit" value="Registrieren"></div>
+            </form>
         </div>
     </div>
 
@@ -87,5 +135,6 @@
 
 <script src="navi.js"></script>
 <script src="tab.js"></script>
+<script src="form.js"></script>
 </body>
 </html>
