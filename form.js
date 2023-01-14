@@ -50,9 +50,17 @@ function formatCurrency(input, blur) {
 
     // get input value
     var input_val = input.value;
+    // input_val = input_val.replace('€', '');
+    // input_val = input_val.replace(" \u20AC", '');
 
     // don't validate empty input
     if (input_val === "") { return; }
+
+    // // don't validate empty input
+    // let numberCheck = Number(input_val);
+    //
+    // console.log(isNaN(numberCheck));
+    // if (isNaN(numberCheck)) {input.value = ''; return; }
 
     // original length
     var original_len = input_val.length;
@@ -87,6 +95,7 @@ function formatCurrency(input, blur) {
         right_side = right_side.substring(0, 2);
 
         // join number by .
+        // input_val = left_side + "," + right_side;
         input_val = left_side + "," + right_side + " \u20AC";
 
     } else {
