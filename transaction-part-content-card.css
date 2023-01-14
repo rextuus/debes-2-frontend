@@ -1,0 +1,344 @@
+/*.content-card {*/
+/*    border: 1px solid #424243;*/
+/*    border-radius: 8px;*/
+/*    overflow: hidden;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.card-header {*/
+/*    background-color: #424243;*/
+/*    align-items: center;*/
+/*    padding: 0.75rem 1rem;*/
+/*    max-width: 100%;*/
+
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.date-since-arrow {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    width: 100%;*/
+/*}*/
+/*.container {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+/*.date {*/
+/*    flex: 1;*/
+/*    min-width: fit-content;*/
+/*    font-size: 1.2em;*/
+/*    border-bottom: 4px solid #80596f;*/
+/*    margin-bottom: 20px;*/
+/*}*/
+/*.since{*/
+/*    flex: 1;*/
+/*    min-width: fit-content;*/
+/*    font-size: 0.8em;*/
+/*}*/
+/*.arrow {*/
+/*    margin-left: auto;*/
+/*    flex-shrink: 0;*/
+/*    !*order: 3;*!*/
+/*    !*align-self: flex-end;*!*/
+/*}*/
+
+/*.label {*/
+/*    flex: 1;*/
+
+/*    font-size: 1.8em;*/
+/*    font-weight: bold;*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 20px;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.transparent-text {*/
+/*    !* Use a linear gradient as the background *!*/
+/*    background: linear-gradient(to right, #ffffff, #ffffff 90%, transparent);*/
+/*    !* Clip the text to the gradient *!*/
+/*    -webkit-background-clip: text;*/
+/*    background-clip: text;*/
+/*    !* Use a mixin to apply color and gradient to the text *!*/
+/*    -webkit-text-fill-color: transparent;*/
+/*    text-fill-color: transparent;*/
+
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*}*/
+
+
+/*.info {*/
+/*    flex: 1;*/
+/*}*/
+
+/*.info-element {*/
+/*    display: inline-block;*/
+/*    background: #6c915b;*/
+/*    border: 2px solid black;*/
+/*    color: black;*/
+/*    padding: 2px;*/
+/*    border-radius: 8px;*/
+/*}*/
+/*.info-element-last {*/
+/*    display: inline-block;*/
+/*    float: right;*/
+/*    background: #6c915b;*/
+/*    border: 2px solid black;*/
+/*    color: black;*/
+/*    padding: 2px;*/
+/*    border-radius: 8px;*/
+/*}*/
+
+/*.card-body {*/
+/*    background-color: #424243;*/
+/*    padding: 1rem;*/
+/*}*/
+
+/*.collapse-button {*/
+/*    border: 0;*/
+/*    background: none;*/
+/*    cursor: pointer;*/
+/*    outline: none;*/
+
+/*    position: absolute;*/
+/*    !*top: 50%;*!*/
+/*    left: 50%;*/
+/*    !*transform: translate(-50%, -50%);*!*/
+/*}*/
+
+/*.collapse-icon {*/
+/*    fill: #666;*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    transition: transform 0.3s;*/
+/*}*/
+
+/*.collapse-icon.rotated {*/
+/*    transform: rotate(180deg);*/
+/*}*/
+
+/*.content-card.collapsed .card-body {*/
+/*    display: none;*/
+/*}*/
+
+/*.content-card.collapsed .card-header {*/
+/*    height: 15%;*/
+/*}*/
+
+
+/*!*buttons*!*/
+/*.accept-button {*/
+/*    background: #6c915b;*/
+/*    border: 2px solid #000000;*/
+/*    border-radius: 8px;*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: bold;*/
+/*}*/
+
+
+
+.content-card {
+    max-width: 100%;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #424243;
+}
+
+.card-header {
+    background-color: #424243;
+    padding: 10px;
+    border-bottom: 1px solid #424243;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    width: 100%;
+}
+
+.row-date {
+    position: relative;
+    justify-content: flex-start;
+}
+
+.date {
+    text-align: left;
+    font-size: 18px;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.date-since {
+    font-size: 1.2em;
+    border-bottom: 4px solid #80596f;
+    margin-right: 5px;
+}
+
+.date-plain {
+    font-size: 0.8em;
+}
+
+.collapse-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.row-info {
+    font-size: 0.9em;
+    font-weight: bold;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.left-side-icon {
+    /*for chields*/
+    margin-right: 5px;
+    display: inline-block;
+
+
+    /*for itsels*/
+    background: #6c915b;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.right-side-icon {
+    margin-left: auto;
+    display: inline-block;
+
+    background: #6c915b;
+    border: 2px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.row-label {
+    width: 100%;
+    text-align: center;
+
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.transparent-text {
+    /* Use a linear gradient as the background */
+    background: linear-gradient(to right, #ccc, #ccc 90%, transparent);
+    /* Clip the text to the gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Use a mixin to apply color and gradient to the text */
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.body-element{
+    margin-bottom: 15px;
+}
+
+.description{
+
+}
+
+
+/*transaction state infos*/
+.account-details {
+
+}
+
+.transaction-state {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.state-icon {
+    margin-right: 10px;
+    margin-bottom: 2px;
+    border: 1px solid black;
+    color: black;
+    padding: 2px;
+    /*border-radius: 8px;*/
+}
+.state-icon.active {
+    background: #6c915b;
+}
+
+.state-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.state-date {
+    color: black;
+
+}
+.state-date.active {
+    color: #d7e6cf;
+    font-weight: bold;
+}
+
+.next-state-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.next-state-button button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-size: 1.1em; /* Increase font size */
+    border: 2px solid black;
+    color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.accept{
+    background-color: #6c915b; /* Green background */
+
+}
+.decline{
+    background-color: #c04545; /* Green background */
+}
+
+.next-state-button img {
+    padding: 5px;
+    width: 30px;
+    margin-right: 10px; /* Add some margin between the image and text */
+}
+
+.next-state-button-text{
+    margin-right: 10px;
+}
+

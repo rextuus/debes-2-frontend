@@ -1,0 +1,181 @@
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link zur CSS-Datei -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="navi.css">
+    <link rel="stylesheet" href="tab.css">
+    <link rel="stylesheet" href="payment-option-content-card.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Debes - Deine Konten</title>
+</head>
+<body>
+
+
+<div class="top-navi">
+    <div></div>
+    <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li>
+                <a href="#">About me</a>
+            </li>
+            <li>
+                <a href="#">Speaker &amp; Writer</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="page-header">
+    <div class="page-header-text">
+        Konten
+    </div>
+    <div class="page-header-image">
+        <img src="public/assets/img/bank-account.svg" alt="Tile image">
+        <img src="public/assets/img/paypal-account.svg" alt="Tile image">
+    </div>
+
+</div>
+<div class="content-body">
+
+
+    <div class="empty-list-info font-size-1-2">
+        Usern, die dir Geld überweisen wollen, werden nur als aktiv markierte Konten angezeigt. Ihnen wird automatisch
+        das als primär markierte Konto als Zahlungsmethode vorgeschlagen.
+    </div>
+
+
+    <div class="content-card">
+        <div class="card-header">
+            <div class="row row-date active">
+                <div class="date active">
+                    <div class="date-since">
+                        Bankkonto
+                    </div>
+                    <div class="date-icon">
+                        <img src="public/assets/img/bank-account.svg" alt="Tile image">
+                    </div>
+                </div>
+                <svg class="collapse-icon" viewBox="0 0 24 24">
+                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                </svg>
+            </div>
+            <div class="row row-label ">
+                <div class="label transparent-text">
+                    Sparkassen Konto Nummer 1
+                </div>
+            </div>
+            <div class="row row-info">
+                <div class="left-side-icon">Aktiv</div>
+                <div class="left-side-icon">Primär</div>
+<!--                <div class="right-side-icon">New</div>-->
+            </div>
+        </div>
+        <div class="card-body hidden">
+            <div class="account-details body-element">
+                <div class="detail-row">
+                    <div class="details-row-name">
+                        Inhaber:
+                    </div>
+                    <div class="state-date active">
+                        Wolfgang Hinzmann
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="details-row-name">
+                        Iban:
+                    </div>
+                    <div class="state-date active">
+                        DE54 3705 0299 1081 0175 90
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="details-row-name">
+                        BIC:
+                    </div>
+                    <div class="state-date active">
+                        COKS
+                    </div>
+                </div>
+                <div class="detail-row">
+                    <div class="details-row-name">
+                        Kreditinstitut:
+                    </div>
+                    <div class="state-date active">
+                        Kreisparkasse Koeln asjlkfj akjaokdjda adkljöl
+                    </div>
+                </div>
+            </div>
+            <div class="next-state-button body-element">
+                <button class="accept">
+                    <div class="next-state-button-text">Editieren</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="content-card">
+        <div class="card-header">
+            <div class="row row-date  ">
+                <div class="date ">
+                    <div class="date-since">
+                        Paypalkonto
+                    </div>
+                    <div class="date-icon">
+                        <img src="public/assets/img/paypal-account.svg" alt="Tile image">
+                    </div>
+                </div>
+                <svg class="collapse-icon" viewBox="0 0 24 24">
+                    <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                </svg>
+            </div>
+            <div class="row row-label ">
+                <div class="label transparent-text">
+                    Sparkassen Konto Nummer 1
+                </div>
+            </div>
+            <div class="row row-info">
+                <div class="left-side-icon active">Aktiv</div>
+                <div class="left-side-icon">Primär</div>
+<!--                <div class="right-side-icon">New</div>-->
+            </div>
+        </div>
+        <div class="card-body hidden">
+            <div class="account-details body-element">
+                <div class="detail-row">
+                    <div class="details-row-name">
+                        Email:
+                    </div>
+                    <div class="state-date active">
+                        wolfgang_hinzmann@web.de
+                    </div>
+                </div>
+            </div>
+            <div class="next-state-button body-element">
+                <button class="accept">
+                    <div class="next-state-button-text">Editieren</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--<script src="navi.js"></script>-->
+<script src="tab.js"></script>
+<script src="content-card.js"></script>
+</body>
+</html>

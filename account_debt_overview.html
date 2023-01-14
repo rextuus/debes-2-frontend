@@ -1,0 +1,287 @@
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link zur CSS-Datei -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="navi.css">
+    <link rel="stylesheet" href="tab.css">
+    <link rel="stylesheet" href="transaction-part-content-card.css">
+    <link rel="stylesheet" href="account-debt-overview.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Debes - Deine Schulden</title>
+</head>
+<body>
+
+
+<div class="top-navi top-navi-with-tabs">
+    <div></div>
+    <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li>
+                <a href="#">About me</a>
+            </li>
+            <li>
+                <a href="#">Speaker &amp; Writer</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="tab-nav">
+    <button class="tab-button active" data-tab="tab-1" data-name="Neu" data-image="public/assets/img/create.svg">
+    </button>
+    <button class="tab-button " data-tab="tab-2" data-name="Akzeptiert" data-image="public/assets/img/accept.svg">
+    </button>
+    <button class="tab-button " data-tab="tab-3" data-name="Bezahlt" data-image="public/assets/img/paid.svg"></button>
+    <button class="tab-button " data-tab="tab-4" data-name="Erledigt" data-image="public/assets/img/party.svg"></button>
+</div>
+<div class="page-header">
+    <div class="page-header-text">
+        Neu
+    </div>
+    <div class="page-header-image">
+        <img src="public/assets/img/create.svg" alt="Tile image">
+    </div>
+</div>
+<div class="content-body">
+
+
+    <!-- HTML for the tab content -->
+
+    <div id="tab-1" class="tab active">
+
+
+        <div class="content-card">
+            <div class="card-header">
+                <div class="row row-date">
+                    <div class="date">
+                        <div class="date-since">
+                            vor 77 Tagen
+                        </div>
+                        <div class="date-plain">
+                            (01/12/2023)
+                        </div>
+                    </div>
+                    <svg class="collapse-icon" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </div>
+                <div class="row row-label ">
+                    <div class="label transparent-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        auctor, magna vel bibendum t
+                    </div>
+                </div>
+                <div class="row row-info">
+                    <div class="left-side-icon">@Wolfgang</div>
+                    <div class="left-side-icon">13.99 &euro;</div>
+                    <div class="right-side-icon">New</div>
+                </div>
+            </div>
+            <div class="card-body hidden">
+                <div class="description body-element">
+                    Du schuldest {{ name }} noch {{ amount }} für {{ reason}}
+                </div>
+                <div class="transaction-details body-element">
+                    <div class="transaction-state">
+                        <div class="state-icon active">
+                            <img src="public/assets/img/create.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date active">08.09.1999</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/accept.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Akzeptiert</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/paid.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Bezahlt</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/party.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Abgewickelt</div>
+                    </div>
+                </div>
+                <div class="next-state-button body-element">
+                    <button class="accept">
+                        <img src="public/assets/img/accept.svg" alt="Button Image">
+                        <div class="next-state-button-text">Akzeptieren</div>
+                    </button>
+                    <button class="decline">
+                        <img class="rotate" src="public/assets/img/accept.svg" alt="Button Image">
+                        <div class="next-state-button-text">Akzeptieren</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content-card">
+            <div class="card-header">
+                <div class="row row-date">
+                    <div class="date">
+                        <div class="date-since">
+                            vor 77 Tagen
+                        </div>
+                        <div class="date-plain">
+                            (01/12/2023)
+                        </div>
+                    </div>
+                    <svg class="collapse-icon" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </div>
+                <div class="row row-label ">
+                    <div class="label transparent-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        auctor, magna vel bibendum t
+                    </div>
+                </div>
+                <div class="row row-info">
+                    <div class="left-side-icon">Left</div>
+                    <div class="left-side-icon">Left</div>
+                    <div class="left-side-icon">Left</div>
+                    <div class="right-side-icon">Right</div>
+                </div>
+            </div>
+            <div class="card-body hidden">
+                <div class="description body-element">
+                    Du schuldest {{ name }} noch {{ amount }} für {{ reason}}
+                </div>
+                <div class="transaction-details body-element">
+                    <div class="transaction-state">
+                        <div class="state-icon active">
+                            <img src="public/assets/img/create.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date active">08.09.1999</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/accept.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Akzeptiert</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/paid.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Bezahlt</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/done.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Abgewickelt</div>
+                    </div>
+                </div>
+                <div class="next-state-button body-element">
+                    <button class="accept">
+                        <img src="public/assets/img/accept.svg" alt="Button Image">
+                        <div class="next-state-button-text">Akzeptieren</div>
+                    </button>
+                    <button class="decline">
+                        <img class="rotate" src="public/assets/img/accept.svg" alt="Button Image">
+                        <div class="next-state-button-text">Akzeptieren</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="tab-2" class="tab">
+        <div class="content-card">
+            <div class="card-header">
+                <div class="row row-date">
+                    <div class="date">
+                        <div class="date-since">
+                            vor 77 Tagen
+                        </div>
+                        <div class="date-plain">
+                            01/12/2023
+                        </div>
+                    </div>
+                    <svg class="collapse-icon" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </div>
+                <div class="row row-label ">
+                    <div class="label transparent-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        auctor, magna vel bibendum t
+                    </div>
+                </div>
+                <div class="row row-info">
+                    <div class="left-side-icon">Left</div>
+                    <div class="left-side-icon">Left</div>
+                    <div class="left-side-icon">Left</div>
+                    <div class="right-side-icon">Right</div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="description body-element">
+                    Du schuldest {{ name }} noch {{ amount }} für {{ reason}}
+                </div>
+                <div class="transaction-details body-element">
+                    <div class="transaction-state">
+                        <div class="state-icon active">
+                            <img src="public/assets/img/create.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date active">08.09.1999</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/accept.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Akzeptiert</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/paid.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Bezahlt</div>
+                    </div>
+                    <div class="transaction-state">
+                        <div class="state-icon">
+                            <img src="public/assets/img/done.svg" alt="Tile image">
+                        </div>
+                        <div class="state-date">Abgewickelt</div>
+                    </div>
+                </div>
+                <div class="next-state-button body-element">
+                    <button>
+                        <img src="public/assets/img/accept.svg" alt="Button Image">
+                        Akzeptieren
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tab-3" class="tab">
+        <div class="empty-list-info">
+            Hier werden bereits bezahlte, aber von dir noch nicht kontrollierte Transaktionen angezeigt. Momentan hast du keine Transaktionen dieser Art!
+        </div>
+    </div>
+
+
+</div>
+
+<!--<script src="navi.js"></script>-->
+<script src="tab.js"></script>
+<script src="content-card.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link zur CSS-Datei -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="navi.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="tab.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Debes - Claim</title>
+</head>
+<body>
+
+
+<div class="top-navi top-navi-with-tabs">
+    <div></div>
+    <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li>
+                <a href="#">About me</a>
+            </li>
+            <li>
+                <a href="#">Speaker &amp; Writer</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div id="tab-nav">
+    <button class="tab-button active" data-tab="tab-1">Standard</button>
+    <button class="tab-button disabled" data-tab="tab-2">Multiple</button>
+</div>
+<div class="content-body">
+
+
+    <!-- HTML for the tab content -->
+    <div id="tab-content">
+        <div id="tab-1" class="tab active">
+            <div class="form-header">Zeit schulden einzutreiben</div>
+            <form>
+                <div class="form-input-field"><input class="form-style" type="text" id="login-username"
+                                                     placeholder="Username"></div>
+                <div class="form-input-field"><input class="form-style" type="password" id="login-password"
+                                                     placeholder="Passwort"></div>
+                <div class="form-submit-field"><input class="btn" type="submit" value="Login"></div>
+            </form>
+
+        </div>
+        <div id="tab-2" class="tab">
+            <form>
+                <div class="form-input-field"><input class="form-style" type="text" id="registration-username"
+                                                     placeholder="Username"></div>
+                <div class="form-input-field"><input class="form-style" type="password" id="registration-password"
+                                                     placeholder="Passwort"></div>
+                <div class="form-input-field"><input class="form-style" type="email" id="registration-email"
+                                                     placeholder="Email"></div>
+                <div class="form-submit-field"><input class="btn" type="submit" value="Registrieren"></div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script src="navi.js"></script>
+<script src="account-landing.js"></script>
+<script src="tab.js"></script>
+</body>
+</html>

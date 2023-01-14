@@ -1,0 +1,214 @@
+<html lang="de">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link zur CSS-Datei -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="account-landing.css">
+    <link rel="stylesheet" href="transaction-part-content-card.css">
+    <link rel="stylesheet" href="navi.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <title>Debes - Übersicht</title>
+</head>
+<body>
+
+
+<div class="top-navi top-navi-with-tabs">
+    <div>
+        <div class="account-landing-header">
+            Hallo User
+        </div>
+    </div>
+    <button id="burger" class="open-main-nav">
+        <span class="burger"></span>
+        <span class="burger-text">Menu</span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li>
+                <a href="#">About me</a>
+            </li>
+            <li>
+                <a href="#">Speaker &amp; Writer</a>
+            </li>
+            <li>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="tile-container">
+    <a href="#" class="tile" data-url="http://www.example.com" data-caption="Tile 1">
+        <img src="public/assets/img/claim2.png" alt="Tile image">
+    </a>
+    <a href="#" class="tile" data-url="http://www.example.com">
+        <img src="public/assets/img/claim.png" alt="Tile image">
+    </a>
+    <a href="#" class="tile" data-url="http://www.example.com">
+        <img src="public/assets/img/history.png" alt="Tile image">
+    </a>
+</div>
+
+<div class="content-body">
+
+    <div class="statistics">
+        <div id="balance_area" class="balance balance-hidden">
+            <div class="balance-header">
+                <div class="balance-text-number">
+                    <div class="balance-text">Balance</div>
+                    <div class="balance-number">
+                        <p><span id="total_balance">442,54</span> &euro;</p>
+                    </div>
+                </div>
+
+                <div class="balance-image">
+                    <img id="balance_image" src="public/assets/img/tendence.png" alt="Image description" width="60" height="60">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="info-container">
+            <div class="balance-part">
+                <div class="balance-part-header">
+                    <div class="balance-part-header-element">Verliehen</div>
+                    <div class="part-balance-part-header-element-image">
+                        <img src="public/assets/img/tendence.png" alt="Image description" width="30" height="30">
+                    </div>
+                </div>
+                <div class="balance-part-total">
+                    <p><span id="total_loans">442,54</span> &euro;</p>
+                </div>
+                <div class="balance-part-summary">
+                    <div class="balance-part-detail-header">
+                        <div class="balance-part-detail-header-variant">Offen:</div>
+                        <div class="balance-part-detail-header-amount">1</div>
+                    </div>
+                    <div class="balance-part-detail-header">
+                        <div class="balance-part-detail-header-variant">Akzeptiert:</div>
+                        <div class="balance-part-detail-header-amount">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="balance-part">
+                <div class="balance-part-header">
+                    <div class="balance-part-header-element">Geborgt</div>
+                    <div class="part-balance-part-header-element-image">
+                        <img src="public/assets/img/tendence.png" alt="Image description" width="30" height="30">
+                    </div>
+
+                </div>
+                <div class="balance-part-total balance-negative">
+                    <p><span id="total_debts">623,85</span> &euro;</p>
+                </div>
+                <div class="balance-part-summary">
+                    <div class="balance-part-detail-header">
+                        <div class="balance-part-detail-header-variant">Offen:</div>
+                        <div class="balance-part-detail-header-amount">2</div>
+                    </div>
+                    <div class="balance-part-detail-header">
+                        <div class="balance-part-detail-header-variant">Akzeptiert:</div>
+                        <div class="balance-part-detail-header-amount">4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px; margin-top: 10px;">
+        Newest Ones
+    </div>
+
+        <div class="content-card collapsed">
+            <div class="card-header">
+
+                <div class="date">
+                    vor 77 Tagen<span class="since"> (31.05.1977)</span>
+                </div>
+                <div class="arrow">
+                    <button class="collapse-button">
+                        <svg class="collapse-icon" viewBox="0 0 24 24">
+                            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="label transparent-text">
+                    Hannassss Geburtstaggesc 2022 viel zu lange oder
+                </div>
+                <div class="info">
+                    <div class="info-element">
+                        22.50 &euro;
+                    </div>
+                    <div class="info-element">
+                        @Wolfgang
+                    </div>
+
+                    <div class="info-element-last">
+                        not-accepted
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-body">
+                <p>Du schuldest Wolfgang noch 22.70 &euro; für <span>Hannas Geschenk 2022</span></p>
+                <p>Du hast diese Forderung noch nicht akzeptiert</p>
+
+                <button class="accept-button">
+                    Handeln
+                </button>
+            </div>
+        </div>
+
+    <div class="content-card collapsed">
+        <div class="card-header">
+
+            <div class="date">
+                vor 77 Tagen<span class="since"> (31.05.1977)</span>
+            </div>
+            <div class="arrow">
+                <button class="collapse-button">
+                    <svg class="collapse-icon" viewBox="0 0 24 24">
+                        <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="label transparent-text">
+                Hannassss Geburtstaggesc 2022 viel zu lange oder
+            </div>
+            <div class="info">
+                <div class="info-element">
+                    22.50 &euro;
+                </div>
+                <div class="info-element">
+                    @Wolfgang
+                </div>
+
+                <div class="info-element-last">
+                    not-accepted
+                </div>
+
+            </div>
+        </div>
+        <div class="card-body">
+            <p>Du schuldest Wolfgang noch 22.70 &euro; für <span>Hannas Geschenk 2022</span></p>
+            <p>Du hast diese Forderung noch nicht akzeptiert</p>
+
+            <button class="accept-button">
+                Handeln
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="navi.js"></script>
+<script src="account-landing.js"></script>
+<script src="content-card.js"></script>
+</body>
+</html>
